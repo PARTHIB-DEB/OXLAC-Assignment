@@ -1,5 +1,5 @@
 from django.urls import path
-from ..theatre.views import AvailabilityView, CustomUnavailabilityView, SlotView
+from theatre.views import AvailabilityView, CustomUnavailabilityView, SlotView
 
 urlpatterns = [
     path('<int:id>/availability', AvailabilityView.as_view(), name='theatre-availability'),
